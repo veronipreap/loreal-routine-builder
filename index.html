@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -45,7 +45,10 @@
       <!-- Selected Products -->
       <div class="selected-products">
         <h2>Selected Products</h2>
-        <div id="selectedProductsList"></div>
+        <div id="selectedProductsList" aria-live="polite"></div>
+        <button id="clearSelections" class="clear-btn" type="button">
+          Clear All
+        </button>
         <button id="generateRoutine" class="generate-btn">
           <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Routine
         </button>
@@ -54,7 +57,7 @@
       <!------- Chat Area ------->
       <section class="chatbox">
         <h2>Let's Build Your Routine</h2>
-        <div id="chatWindow" class="chat-window"></div>
+        <div id="chatWindow" class="chat-window" aria-live="polite"></div>
 
         <form id="chatForm" class="chat-form">
           <label for="userInput" class="visually-hidden">Message</label>
