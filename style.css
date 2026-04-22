@@ -79,6 +79,33 @@ body {
   overflow-y: auto;
   background: #fafafa;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat-message {
+  max-width: 85%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.chat-message strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.chat-message.assistant {
+  align-self: flex-start;
 }
 
 /* placeholder message */
